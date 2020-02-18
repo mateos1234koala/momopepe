@@ -1,0 +1,37 @@
+{
+<<<<<<< HEAD
+  "name": "typescript",
+=======
+  "name": "despliegue_continuo",
+>>>>>>> 1698b347ecd9bfd29d033a0c7083459dfb09c752
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "express": "^4.16.4",
+<<<<<<< HEAD
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc *.ts"
+=======
+    "pug": "^2.0.4",
+    "typescript": "^3.5.2"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.3.13",
+    "jasmine": "^3.4.0",
+    "jasmine-ts": "^0.3.0",
+    "ts-node": "^8.3.0"
+  },
+  "scripts": {
+    "test": "jasmine-ts --config=jasmine.json",
+    "build": "tsc main.ts"
+>>>>>>> 1698b347ecd9bfd29d033a0c7083459dfb09c752
+  },
+  "author": "",
+  "license": "ISC"
+}
