@@ -9,10 +9,14 @@
     "pug": "^2.0.4"
   },
   "devDependencies": {
+    "@types/jasmine": "^3.5.5",
+    "jasmine": "^3.5.0",
+    "jasmine-ts": "^0.3.0",
+    "ts-node": "^8.6.2",
     "typescript": "^3.7.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jasmine-ts --config=jasmine.json",
     "build": "tsc *.ts",
     "execute": "node main.js"
   },
