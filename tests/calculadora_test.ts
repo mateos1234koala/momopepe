@@ -1,3 +1,4 @@
+// chau mundo
 import { Calculadora } from "../calculadora"
 
 describe("calculadora", () => {
