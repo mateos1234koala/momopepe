@@ -1,12 +1,7 @@
 import express = require("express");
+import {Calculadora} from "./calculadora"
 
 const PORT = 3000
-
-class Calculadora {
-    sumar(num1: number, num2: number) {
-        return num1 + num2
-    }
-}
 
 let main = () => {
     let app: express.Application = express()
@@ -19,6 +14,7 @@ let main = () => {
             suma: "0"
         })
     })
+
     app.get('/sumar', function (req: any, res: any) {
         let op1: string = req.query.op1
         let op2: string = req.query.op2
@@ -29,7 +25,6 @@ let main = () => {
         })
     })
 
-    // Iniciamos la ejecucion del server
     app.listen(PORT, () => {
         console.log(`Server running in port ${PORT}`);
     })
